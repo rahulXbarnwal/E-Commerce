@@ -1,4 +1,4 @@
-import { Search, ShoppingCartOutlined } from "@material-ui/icons";
+import { Search, ShoppingCartOutlined } from "@mui/icons-material";
 
 import { Badge } from "@material-ui/core";
 import { Link } from "react-router-dom";
