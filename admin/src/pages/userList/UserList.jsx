@@ -63,9 +63,9 @@ export default function UserList() {
     <div className="userList">
       <DataGrid
         rows={data}
-        disableSelectionOnClick
+        disableRowSelectionOnClick={false}
         columns={columns}
-        pageSize={8}
+        paginationModel={{ pageSize: 8 }}
         checkboxSelection
       />
     </div>

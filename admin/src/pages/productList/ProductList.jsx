@@ -14,7 +14,7 @@ export default function ProductList() {
   };
 
   const columns = [
-    { field: "id", headerName: "ID", width: 90 },
+    { field: "_id", headerName: "ID", width: 90 },
     {
       field: "product",
       headerName: "Product",
@@ -63,9 +63,9 @@ export default function ProductList() {
     <div className="productList">
       <DataGrid
         rows={data}
-        disableSelectionOnClick
+        disableSelectionOnClick={false}
         columns={columns}
-        pageSize={8}
+        paginationModel={{ pageSize: 8 }}
         checkboxSelection
       />
     </div>
